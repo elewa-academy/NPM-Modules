@@ -1,1 +1,0 @@
-links to helpful resources for this code along

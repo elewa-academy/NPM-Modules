@@ -1,5 +1,15 @@
-this readme is the cover page of your project series  
-individual projects are contained in copies of the project-template folder within this directory
+# MEGAMODEL
+
+In this project you will build a configurable Data Model module, you can think of it as a very basic version of Mongoose.js.  You will re-use this module in the rest of your projects until we cover the true Mongoose.js.
+
+The primary Learning Objectives for this series are (roughly in order):
+* Lodash & object deep comparison
+* Detecting & communicating errors
+* Inheritance & using it
+* Module design
+* Async & using it
+* Testing async code
+* Local npm modules
 
 ___
 ___

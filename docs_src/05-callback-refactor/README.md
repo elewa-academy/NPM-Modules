@@ -1,6 +1,6 @@
 # Project Title
 
-
+with callbacks, with promises. build a basic c/m with each
 
 ### Index
 * [Learning Objectives](#learning-objectives)

@@ -1,6 +1,6 @@
 # Project Title
 
-Buil
+object deep comparison - lodash
 
 ### Index
 * [Learning Objectives](#learning-objectives)
