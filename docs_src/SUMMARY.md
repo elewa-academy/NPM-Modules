@@ -13,5 +13,5 @@
 * [10. Local Modules](./09-local-modules/README.md)
 * [11. Publish to NPM](./10-publish-to-npm/README.md)
 * [12. Wrapping Up](./11-wrapping-up/README.md)
-* [MegaModl Repo](https://github.com/elewa-academy/Fullstack-Projects/tree/master/docs_src)
+* [MegaModel Repo](https://github.com/elewa-academy/Fullstack-Projects/tree/master/docs_src)
 * [Home](https://elewa-academy.github.io)
