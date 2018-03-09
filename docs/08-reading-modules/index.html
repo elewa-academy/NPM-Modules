@@ -1,0 +1,492 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>9. Reading Modules · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.2">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../09-local-modules/" />
+    
+    
+    <link rel="prev" href="../07-provide-tests/" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Welcome
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../00-type-validation/">
+            
+                <a href="../00-type-validation/">
+            
+                    
+                    1. Type Validation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../01-error-handling/">
+            
+                <a href="../01-error-handling/">
+            
+                    
+                    2. Error Handling
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../02-search/">
+            
+                <a href="../02-search/">
+            
+                    
+                    3. Search
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../03-inheritance-refactor/">
+            
+                <a href="../03-inheritance-refactor/">
+            
+                    
+                    4. Inheritance Refactor
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../04-configuring-instances/">
+            
+                <a href="../04-configuring-instances/">
+            
+                    
+                    5. Configuring Instances
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../05-callback-refactor/">
+            
+                <a href="../05-callback-refactor/">
+            
+                    
+                    6. Callback Refactor
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../06-promises-refactor/README.md">
+            
+                <span>
+            
+                    
+                    7. Promises Refactor
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../07-provide-tests/">
+            
+                <a href="../07-provide-tests/">
+            
+                    
+                    8. Provide Tests
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.10" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    9. Reading Modules
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../09-local-modules/">
+            
+                <a href="../09-local-modules/">
+            
+                    
+                    10. Local Modules
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../10-publish-to-npm/">
+            
+                <a href="../10-publish-to-npm/">
+            
+                    
+                    11. Publish to NPM
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../11-wrapping-up/">
+            
+                <a href="../11-wrapping-up/">
+            
+                    
+                    12. Wrapping Up
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" >
+            
+                <a target="_blank" href="https://github.com/elewa-academy/Fullstack-Projects/tree/master/docs_src">
+            
+                    
+                    MegaModl Repo
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" >
+            
+                <a target="_blank" href="https://elewa-academy.github.io">
+            
+                    
+                    Home
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >9. Reading Modules</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="reading-node-modules">Reading Node Modules</h1>
+<p><a href="https://github.com/parro-it/awesome-micro-npm-packages" target="_blank">https://github.com/parro-it/awesome-micro-npm-packages</a>
+    this can pretty much be the lesson</p>
+<p>make it a local module, build a basic crud app</p>
+<h3 id="index">Index</h3>
+<ul>
+<li><a href="#learning-objectives">Learning Objectives</a></li>
+<li><a href="#specifications">Specifications</a></li>
+<li><a href="#resources">Resources</a></li>
+</ul>
+<hr>
+<h2 id="learning-objectives">Learning Objectives</h2>
+<p>getting the gist of code you don&apos;t understand
+navigating codebase
+single responsibility principle
+module architectures
+assessing modules before using them</p>
+<p><a href="#index">TOP</a></p>
+<hr>
+<h2 id="specifications">Specifications</h2>
+<p><a href="https://bytearcher.com/articles/evaluating-packages-1-check-community/" target="_blank">https://bytearcher.com/articles/evaluating-packages-1-check-community/</a></p>
+<pre><code>1. top-down.  community first
+2. dependent projects
+3. stars
+4. curated lists
+5. but this is only part. there are new &amp; hidden gems
+</code></pre><p><a href="https://bytearcher.com/articles/evaluating-packages-2-review-repository/" target="_blank">https://bytearcher.com/articles/evaluating-packages-2-review-repository/</a></p>
+<pre><code>1. is usage clear?
+2. why was it created - compared to competition
+3. is it maintained
+4. scope clear? - single responsibility
+5. are there complaints? are those responded to?
+6. can you read the code?
+</code></pre><ol>
+<li>read the articles here: <a href="https://github.com/parro-it/awesome-micro-npm-packages" target="_blank">https://github.com/parro-it/awesome-micro-npm-packages</a></li>
+<li>navigable md repository inventorying 4-6 npm modules</li>
+</ol>
+<pre><code>assignment
+    readme
+        project intro
+        index of modules read
+        notes
+
+    module page
+        module description 
+            is it single responsibility
+        link to - npm, github, website. if they&apos;re all there
+        code
+            outline their readme
+            ascii file structure
+            code ui, api, docs, ...
+        stats
+            forks 
+            commits, 
+            contributors, 
+            last commit, 
+            stars, 
+            downloads, 
+            dependencies, 
+            dependents, 
+            releases
+            version
+            open issues
+
+reading process
+    instructions
+        1. npm package site
+            stats
+        2. github
+            readme
+            stats
+</code></pre><p><a href="#index">TOP</a></p>
+<hr>
+<h2 id="resources">Resources</h2>
+<p><a href="https://github.com/sindresorhus/ama/issues/10" target="_blank">One Line Modules</a></p>
+<p>left pad incidient</p>
+<p>semver</p>
+<p><a href="#index">TOP</a></p>
+<hr>
+<hr>
+<h3 id=""><a href="http://elewa.education/blog" target="_blank"><img src="https://user-images.githubusercontent.com/18554853/34921062-506450ae-f97d-11e7-875f-6feeb26ad72d.png" width="100" height="40"></a></h3>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../07-provide-tests/" class="navigation navigation-prev " aria-label="Previous page: 8. Provide Tests">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../09-local-modules/" class="navigation navigation-next " aria-label="Next page: 10. Local Modules">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"9. Reading Modules","level":"1.10","depth":1,"next":{"title":"10. Local Modules","level":"1.11","depth":1,"path":"09-local-modules/README.md","ref":"./09-local-modules/README.md","articles":[]},"previous":{"title":"8. Provide Tests","level":"1.9","depth":1,"path":"07-provide-tests/README.md","ref":"./07-provide-tests/README.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"08-reading-modules/README.md","mtime":"2018-03-09T20:28:48.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2018-03-09T20:41:56.199Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
