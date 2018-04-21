@@ -1,25 +1,25 @@
 # add, commit recent changes
 git add .
-git commit -m 'clearing /docs'
+git commit -m 'building: $1'
 git checkout master
 # delete contents in /docs to avoid conflicts
 rm -rf ./docs
 # pull other changes
 git pull elewa master
 # enter gitbook source
-cd docs_src
+# cd docs_src
 # build new gitbook
 gitbook build
 # copy it out of the way for branch change
 # f to overwirte last publication
-cp -rf ./_book/. ../docs/ 
+cp -rf ./_book/. ./docs/ 
 # delete the /_book foler
 rm -rf _book
 # return to parent directory
-cd ..
+# cd ..
 # commit recent build
 git add .
-git commit -m 'publishing'
+git commit -m 'publishing: $1'
 # publish changes
 git push elewa master
 

@@ -22,10 +22,9 @@ list
 
 ## Specifications
 
-project specifications overview
-
-link to more detailed specifications in repo if necessary
-
+configured with:
+	path to file it should modify
+	
 
 [TOP](#index)
 

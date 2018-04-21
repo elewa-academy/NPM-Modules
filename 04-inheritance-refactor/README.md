@@ -53,6 +53,7 @@ and to portfolios when they've done the project
 
 link to code alongs that cover this project
 
+https://github.com/joelrojo/Javascript-MVC/tree/master/javascript-racer-challenge
 
 [TOP](#index)
 

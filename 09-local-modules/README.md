@@ -30,6 +30,7 @@ turn your models into a local module
 		options
 			version: callback, promise, return
 			type_validation: boolean
+			db: path to db.txt
 	use example: 
 		let pre-model = require('model')
 		let model = pre-model(options)
