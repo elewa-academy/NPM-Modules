@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>9. Local Modules · GitBook</title>
+        <title>1. Type Validation · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.2">
@@ -61,10 +61,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="../10-module-your-module/" />
+    <link rel="next" href="../02-error-handling/" />
     
     
-    <link rel="prev" href="../08-reading-modules/" />
+    <link rel="prev" href="../sections/a-functionality.html" />
     
 
     </head>
@@ -120,9 +120,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.2.1" data-path="../01-type-validation/">
+        <li class="chapter active" data-level="1.2.1" data-path="./">
             
-                <a href="../01-type-validation/">
+                <a href="./">
             
                     
                     1. Type Validation
@@ -262,9 +262,9 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.4.2" data-path="./">
+        <li class="chapter " data-level="1.4.2" data-path="../09-local-modules/">
             
-                <a href="./">
+                <a href="../09-local-modules/">
             
                     
                     9. Local Modules
@@ -433,7 +433,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >9. Local Modules</a>
+        <a href=".." >1. Type Validation</a>
     </h1>
 </div>
 
@@ -449,8 +449,7 @@
                                 <section class="normal markdown-section">
                                 
                                 <h1 id="project-title">Project Title</h1>
-<p>build a model factory with these configuration options: sync/async, validating/non-validating - if so a schema.  now write the same basic app twice (ie. same user stories), once synchronous MCL, once async. and of course tests</p>
-<p>make it a local module, build a basic crud app</p>
+<p>object deep comparison - lodash</p>
 <h3 id="index">Index</h3>
 <ul>
 <li><a href="#learning-objectives">Learning Objectives</a></li>
@@ -465,23 +464,26 @@
 <p><a href="#index">TOP</a></p>
 <hr>
 <h2 id="specifications">Specifications</h2>
-<p>turn your models into a local module
-    users can configure it on instantiation:
-        options
-            version: callback, promise, return
-            type_validation: boolean
-            db: path to db.txt
-    use example: 
-        let pre-model = require(&apos;model&apos;)
-        let model = pre-model(options)
-    so build it however you want, but a user uses it as a function not constructor
-npm install it
-use it in a basic crud app</p>
+<p>project specifications overview</p>
+<p>link to more detailed specifications in repo if necessary</p>
 <p><a href="#index">TOP</a></p>
 <hr>
 <h2 id="resources">Resources</h2>
-<p><a href="https://derickbailey.com/2016/04/04/develop-against-local-node-modules-deploy-from-npm-or-github/" target="_blank">https://derickbailey.com/2016/04/04/develop-against-local-node-modules-deploy-from-npm-or-github/</a></p>
-<p>example: <a href="https://github.com/elewa-student/Exploring-Modules" target="_blank">https://github.com/elewa-student/Exploring-Modules</a></p>
+<p>overview</p>
+<h3 id="references">References</h3>
+<p>list of links to general-resources </p>
+<h3 id="exercises">Exercises</h3>
+<p>link to exercises that will practice new skills in this project, they will be stored in this project&apos;s folder in the repo</p>
+<h3 id="examples">Examples</h3>
+<p>link to example/s of this project in the repo.
+and to portfolios when they&apos;ve done the project</p>
+<h3 id="code-alongs">Code Alongs</h3>
+<p>link to code alongs that cover this project</p>
+<p><a href="#index">TOP</a></p>
+<hr>
+<h2 id="assessment">Assessment</h2>
+<p>links to google forms
+links to repo if there is a larger code-based assessment</p>
 <p><a href="#index">TOP</a></p>
 <hr>
 <hr>
@@ -513,12 +515,12 @@ use it in a basic crud app</p>
 
             
                 
-                <a href="../08-reading-modules/" class="navigation navigation-prev " aria-label="Previous page: 8. Reading Modules">
+                <a href="../sections/a-functionality.html" class="navigation navigation-prev " aria-label="Previous page: A. Functionality">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="../10-module-your-module/" class="navigation navigation-next " aria-label="Next page: 10. Module your Module">
+                <a href="../02-error-handling/" class="navigation navigation-next " aria-label="Next page: 2. Error Handling">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -529,7 +531,7 @@ use it in a basic crud app</p>
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"9. Local Modules","level":"1.4.2","depth":2,"next":{"title":"10. Module your Module","level":"1.4.3","depth":2,"path":"10-module-your-module/README.md","ref":"./10-module-your-module/README.md","articles":[]},"previous":{"title":"8. Reading Modules","level":"1.4.1","depth":2,"path":"08-reading-modules/README.md","ref":"./08-reading-modules/README.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["collapsible-chapters"],"pluginsConfig":{"collapsible-chapters":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"09-local-modules/README.md","mtime":"2018-03-11T14:33:51.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2018-04-21T18:56:53.903Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"1. Type Validation","level":"1.2.1","depth":2,"next":{"title":"2. Error Handling","level":"1.2.2","depth":2,"path":"02-error-handling/README.md","ref":"./02-error-handling/README.md","articles":[]},"previous":{"title":"A. Functionality","level":"1.2","depth":1,"path":"sections/a-functionality.md","ref":"./sections/a-functionality.md","articles":[{"title":"1. Type Validation","level":"1.2.1","depth":2,"path":"01-type-validation/README.md","ref":"./01-type-validation/README.md","articles":[]},{"title":"2. Error Handling","level":"1.2.2","depth":2,"path":"02-error-handling/README.md","ref":"./02-error-handling/README.md","articles":[]},{"title":"3. Search","level":"1.2.3","depth":2,"path":"03-search/README.md","ref":"./03-search/README.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["collapsible-chapters"],"pluginsConfig":{"collapsible-chapters":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"01-type-validation/README.md","mtime":"2018-03-08T12:41:54.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2018-04-21T18:56:53.903Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

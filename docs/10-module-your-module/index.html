@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>9. Local Modules · GitBook</title>
+        <title>10. Module your Module · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.2">
@@ -61,10 +61,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="../10-module-your-module/" />
+    <link rel="next" href="../sections/d-publishing.md" />
     
     
-    <link rel="prev" href="../08-reading-modules/" />
+    <link rel="prev" href="../09-local-modules/" />
     
 
     </head>
@@ -262,9 +262,9 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.4.2" data-path="./">
+        <li class="chapter " data-level="1.4.2" data-path="../09-local-modules/">
             
-                <a href="./">
+                <a href="../09-local-modules/">
             
                     
                     9. Local Modules
@@ -275,9 +275,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4.3" data-path="../10-module-your-module/">
+        <li class="chapter active" data-level="1.4.3" data-path="./">
             
-                <a href="../10-module-your-module/">
+                <a href="./">
             
                     
                     10. Module your Module
@@ -433,7 +433,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >9. Local Modules</a>
+        <a href=".." >10. Module your Module</a>
     </h1>
 </div>
 
@@ -448,40 +448,61 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="project-title">Project Title</h1>
-<p>build a model factory with these configuration options: sync/async, validating/non-validating - if so a schema.  now write the same basic app twice (ie. same user stories), once synchronous MCL, once async. and of course tests</p>
-<p>make it a local module, build a basic crud app</p>
+                                <h1 id="reading-node-modules">Reading Node Modules</h1>
+<p>In this project you will carefully analyze several node modules and record your process in a basic repository.</p>
 <h3 id="index">Index</h3>
 <ul>
 <li><a href="#learning-objectives">Learning Objectives</a></li>
 <li><a href="#specifications">Specifications</a></li>
 <li><a href="#resources">Resources</a></li>
-<li><a href="#assessment">Assessment</a></li>
 </ul>
 <hr>
 <h2 id="learning-objectives">Learning Objectives</h2>
-<p>overview</p>
-<p>list</p>
+<ul>
+<li>Getting the gist of code you don&apos;t understand</li>
+<li>Navigating codebase</li>
+<li>Single responsibility principle</li>
+<li>Module architectures</li>
+<li>Assessing modules </li>
+<li>Think of security </li>
+</ul>
 <p><a href="#index">TOP</a></p>
 <hr>
 <h2 id="specifications">Specifications</h2>
-<p>turn your models into a local module
-    users can configure it on instantiation:
-        options
-            version: callback, promise, return
-            type_validation: boolean
-            db: path to db.txt
-    use example: 
-        let pre-model = require(&apos;model&apos;)
-        let model = pre-model(options)
-    so build it however you want, but a user uses it as a function not constructor
-npm install it
-use it in a basic crud app</p>
+<ol>
+<li>Read the articles at the <a href="https://github.com/parro-it/awesome-micro-npm-packages" target="_blank">top of this README</a></li>
+<li>Clone the <a href="https://github.com/elewa-academy/Analyzing-Repos-Template" target="_blank">Analysis Template</a> and analyze a minimum of 4 packages from the Awesome Micro NPM Packages repo.</li>
+<li>Feature this repo on your MEGAMODEL landing page.</li>
+</ol>
 <p><a href="#index">TOP</a></p>
 <hr>
 <h2 id="resources">Resources</h2>
-<p><a href="https://derickbailey.com/2016/04/04/develop-against-local-node-modules-deploy-from-npm-or-github/" target="_blank">https://derickbailey.com/2016/04/04/develop-against-local-node-modules-deploy-from-npm-or-github/</a></p>
-<p>example: <a href="https://github.com/elewa-student/Exploring-Modules" target="_blank">https://github.com/elewa-student/Exploring-Modules</a></p>
+<p>Analysis Repository:</p>
+<ul>
+<li><a href="https://github.com/elewa-academy/Analyzing-Repos-Template" target="_blank">Template</a></li>
+<li><a href="https://elewa-student.github.io/Analyzing-Modules/" target="_blank">Demo</a></li>
+</ul>
+<p>Primary Reading:</p>
+<ul>
+<li><a href="https://github.com/parro-it/awesome-micro-npm-packages" target="_blank">Micro NPM Packages</a>. </li>
+<li>Read the articles linked at the top of this readme. They provide an outstanding overview of selecting and developing with modules.</li>
+</ul>
+<p>Additional Reading:</p>
+<ul>
+<li><a href="https://github.com/sindresorhus/ama/issues/10" target="_blank">One Line Modules</a></li>
+<li><a href="http://www.haneycodes.net/npm-left-pad-have-we-forgotten-how-to-program/" target="_blank">The Left-Pad Incident</a></li>
+<li><a href="https://medium.com/friendship-dot-js/i-peeked-into-my-node-modules-directory-and-you-wont-believe-what-happened-next-b89f63d21558" target="_blank">Don&apos;t Look Too Hard</a></li>
+<li><a href="https://semver.org" target="_blank">Semantic Versioning</a></li>
+<li><a href="https://elewa-academy.github.io/General-Resources/programming-resources/navigating-codebase.html" target="_blank">Navigating Codebase</a></li>
+</ul>
+<p>Security Issues:</p>
+<ul>
+<li><a href="https://elewa-academy.github.io/General-Resources/application-design/security.html" target="_blank">Security 101</a></li>
+<li><a href="https://community.brave.com/t/the-npm-package-is-considered-a-security-risk/3995/3" target="_blank">Dependencies are a Vulnerability</a></li>
+<li><a href="https://blog.risingstack.com/controlling-node-js-security-risk-npm-dependencies/" target="_blank">Assessing a Package</a></li>
+<li><a href="https://techbeacon.com/13-tools-checking-security-risk-open-source-dependencies-0" target="_blank">Risk Analysis Tools</a></li>
+<li><a href="https://blog.cloudboost.io/npm-security-please-dont-blindly-follow-the-panic-f724871ba1a8" target="_blank">Is it That Bad?</a></li>
+</ul>
 <p><a href="#index">TOP</a></p>
 <hr>
 <hr>
@@ -513,12 +534,12 @@ use it in a basic crud app</p>
 
             
                 
-                <a href="../08-reading-modules/" class="navigation navigation-prev " aria-label="Previous page: 8. Reading Modules">
+                <a href="../09-local-modules/" class="navigation navigation-prev " aria-label="Previous page: 9. Local Modules">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="../10-module-your-module/" class="navigation navigation-next " aria-label="Next page: 10. Module your Module">
+                <a href="../sections/d-publishing.md" class="navigation navigation-next " aria-label="Next page: D. Publishing">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -529,7 +550,7 @@ use it in a basic crud app</p>
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"9. Local Modules","level":"1.4.2","depth":2,"next":{"title":"10. Module your Module","level":"1.4.3","depth":2,"path":"10-module-your-module/README.md","ref":"./10-module-your-module/README.md","articles":[]},"previous":{"title":"8. Reading Modules","level":"1.4.1","depth":2,"path":"08-reading-modules/README.md","ref":"./08-reading-modules/README.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["collapsible-chapters"],"pluginsConfig":{"collapsible-chapters":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"09-local-modules/README.md","mtime":"2018-03-11T14:33:51.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2018-04-21T18:56:53.903Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"10. Module your Module","level":"1.4.3","depth":2,"next":{"title":"D. Publishing","level":"1.5","depth":1,"path":"sections/d-publishing.md","ref":"./sections/d-publishing.md","articles":[{"title":"11. Tests","level":"1.5.1","depth":2,"path":"11-tests/README.md","ref":"./11-tests/README.md","articles":[]},{"title":"12. Documentation","level":"1.5.2","depth":2,"path":"12-documentation/README.md","ref":"./12-documentation/README.md","articles":[]},{"title":"13. Polish Repository","level":"1.5.3","depth":2,"path":"13-polish-repository/README.md","ref":"./13-polish-repository/README.md","articles":[]},{"title":"14. Publish to NPM","level":"1.5.4","depth":2,"path":"14-publish-to-npm/README.md","ref":"./14-publish-to-npm/README.md","articles":[]}]},"previous":{"title":"9. Local Modules","level":"1.4.2","depth":2,"path":"09-local-modules/README.md","ref":"./09-local-modules/README.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["collapsible-chapters"],"pluginsConfig":{"collapsible-chapters":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"10-module-your-module/README.md","mtime":"2018-03-09T21:39:51.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2018-04-21T18:56:53.903Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
